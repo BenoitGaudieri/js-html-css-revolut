@@ -24,5 +24,16 @@ $(document).ready(function () {
         }
     });
 
+    $(".arrow").hover(
+        function () {
+            // mouse enter
+            $(".fas").removeClass("fa-chevron-down").addClass("fa-chevron-up");
+        },
+        function () {
+            // mouse leave
+            $(".fas").addClass("fa-chevron-down").removeClass("fa-chevron-up");
+        }
+    );
+
     // end Doc ready
 });
